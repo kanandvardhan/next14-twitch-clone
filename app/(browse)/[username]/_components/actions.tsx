@@ -1,9 +1,9 @@
 "use client";
 
-import { onBlock, onUnblock } from "@/actions/block";
+import { onUnblock } from "@/actions/block";
 import { onFollow, onUnfollow } from "@/actions/follow";
 import { Button } from "@/components/ui/button";
-import { startTransition, useTransition } from "react";
+import { useTransition } from "react";
 import { toast } from "sonner";
 
 interface ActionsProps {
@@ -44,7 +44,7 @@ export const Actions = ({ isFollowing, userId }: ActionsProps) => {
 
   const handleBlock = () => {
     startTransition(() => {
-      onBlock(userId)
+      onUnblock(userId)
         .then((data) =>
           toast.success(`Blocked the user ${data.blocked.username}`)
         )
