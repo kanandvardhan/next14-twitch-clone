@@ -3,6 +3,7 @@ import { toast } from "sonner";
 import { Switch } from "@/components/ui/switch";
 import { startTransition, useTransition } from "react";
 import { updateStream } from "@/actions/stream";
+import { Skeleton } from "@/components/ui/skeleton";
 
 type FieldTypes = "isChatEnabled" | "isChatDelayed" | "isChatFollowersOnly";
 
@@ -12,7 +13,11 @@ interface ToggleCardProps {
   field: FieldTypes;
 }
 
-const ToggleCard = ({ field, label, value = false }: ToggleCardProps) => {
+export const ToggleCard = ({
+  field,
+  label,
+  value = false,
+}: ToggleCardProps) => {
   const [isPending, startTransition] = useTransition();
 
   const onChange = () => {
@@ -40,4 +45,6 @@ const ToggleCard = ({ field, label, value = false }: ToggleCardProps) => {
   );
 };
 
-export default ToggleCard;
+export const ToggleCardSkeleton = () => {
+  return <Skeleton className="rounded-xl p-10 w-full" />;
+};
