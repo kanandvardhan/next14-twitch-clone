@@ -1,38 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gamehub
+
+Hi, I'm Sai Anand. I will be covering one of my exciting projects that I worked on to gain developer experience. The web application is named "Gamehub".
+
+Gamehub is an online live video streaming SaaS application, which can also be referred to as a Twitch Clone. This project is made using the Server Side Rendering capabilities of Next.js 14, Tailwind CSS, Shadcn UI library, Prisma ORM, PostgreSQL database, Livekit streaming API, and authentication services using Clerk.js.
+
+## Features
+
+- *Live Streaming:* Anyone can use this web application to live stream their content on the internet and others can watch it live.
+- *Live Chat:* Includes live chat feature both solo and community-wise.
+- *Streamer Information:* Viewers can know which streamer is currently live, view a particular streamer's about section, their number of followers, and follow or unfollow a streamer.
+- *Search Functionality:* Users can search for any streamer in the search box.
+- *Streamer Dashboard:* Every streamer has their own dashboard which includes:
+  - Control over community chat.
+  - Enable/disable chat.
+  - Delay chat by 3 seconds.
+  - Enable chat only for followers.
+- *Streaming Configuration:* Streamers must configure their server URL and stream key to connect to their local streaming application (e.g., OBS Virtual Studio).
+- *User Management:* Streamers can block/unblock any of their viewers or followers.
+
+## Technologies Used
+
+- *Next.js 14:* Server Side Rendering.
+- *Tailwind CSS:* Styling.
+- *Shadcn UI Library:* UI components.
+- *Prisma ORM:* Database management.
+- *PostgreSQL:* Database.
+- *Livekit Streaming API:* Streaming capabilities.
+- *Clerk.js:* Authentication services.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ensure you have the following installed:
+- Node.js
+- PostgreSQL
+- OBS Virtual Studio (for streaming)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository
+   ```sh
+   git clone https://github.com/your-username/gamehub.git
+2. Install NPM packages
+   ```sh
+   npm install
+3. Set up your environment variables for PostgreSQL, Livekit, and Clerk.js.
+4. Run the application
+   ```sh
+   npm run dev
+   
+### Usage
 
-## Learn More
+1.  **For Streamers:**
+    - Configure your server URL and stream key in the dashboard.  
+    - Use OBS Virtual Studio or any other local streaming application to start streaming.
+        
+2.  **For Viewers:**
+    - Browse and search for live streamers.
+    - Follow or unfollow streamers to customize your sidebar.
+        
+### Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  Fork the Project
+    
+2.  Create your Feature Branch (git checkout -b feature/AmazingFeature)
+    
+3.  Commit your Changes (git commit -m 'Add some AmazingFeature')
+    
+4.  Push to the Branch (git push origin feature/AmazingFeature)
+    
+5.  Open a Pull Request
+    
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### License
 
-## Deploy on Vercel
+Distributed under the MIT License. See LICENSE for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# twitch-clone" 
-"# twitch-clone" 
+Sai Anand - \[kanandvardhan@yahoo.com] - \[https://www.linkedin.com/in/kanandvardhan/]
+
+Project Link: [Next 14 - Twitch Clone](https://github.com/kanandvardhan/next14-twitch-clone)
+
+
+
