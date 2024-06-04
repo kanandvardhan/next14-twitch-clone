@@ -85,7 +85,7 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Sai Anand - \[kanandvardhan@yahoo.com] - \[https://www.linkedin.com/in/kanandvardhan/]
 
-Project Link: [Next 14 - Twitch Clone](https://github.com/kanandvardhan/next14-twitch-clone)
+Project Link: [Next 14 - Twitch Clone](https://next14-twitch-clone-beta.vercel.app/)
 
 
 
